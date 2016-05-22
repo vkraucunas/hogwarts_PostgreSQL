@@ -297,7 +297,17 @@
 'Shakira Renner', (SELECT id FROM houses WHERE name = 'Ravenclaw'), 1, 'hyena'
 'Darwin Wehner', (SELECT id FROM houses WHERE name = 'Ravenclaw'), 1, 'crow'
 
-
+('Maverick Durgan, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'martingale'),
+('Laura Gerhold, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'penguin'),
+('Lorenzo Hayes, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'jaguar'),
+('Orland Stamm, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'sun fish'),
+('Okey Jacobs, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'giant squid'),
+('Johanna Haag, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'seahorse'),
+('Dallas Wintheiser, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'dachshund'),
+('Clovis Jones, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'clown fish'),
+('Dejah Wisozk, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'west highland terrier'),
+('Sienna Stoltenberg, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'seal'),
+('Katrina Kemmer, (SELECT id FROM houses WHERE name = 'Gryffindor'), 7, 'lemur'),
 
 
 function getName() {
@@ -308,7 +318,7 @@ function getName() {
 for (var i = 0; i < 11; i++) {
     var result = "'";
     result += getName();
-    result += "', (SELECT id FROM houses WHERE name = 'Gryffindor')", 7";
+    result += ", (SELECT id FROM houses WHERE name = 'Gryffindor'), 7";
     console.log(result);
 }
 
